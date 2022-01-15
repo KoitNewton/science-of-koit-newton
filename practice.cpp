@@ -15,7 +15,7 @@ void swap(int& a, int& b) {
 class onnna {
 
 public:
-    void age1(int a){
+   void age1(int a){
 		age = a;
 	}
 
@@ -33,14 +33,15 @@ private:
 
 int main() {
 
-	int a = 1000;
+	int a = 19;
 	int b = 2000;
 
 	swap(a, b);
 	onnna nami;
-	cout << "a=" << a << endl;
+	nami.age1(a);
+	cout << "a=" << nami.show() << endl;
 	cout << "b=" << b << endl;
-	nami.age1(19) ;
-	cout << nami.age1(19) << endl;
+	
+
 
 }
