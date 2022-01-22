@@ -246,3 +246,74 @@ void main() {
 
 ​          ->：通过指针访问类成员的运算符。
 
+### 11.2 友元的概念
+
+之前提及的调用类的方法多是使用类里面的public留出的接口，但是限制比较严格，所有产生友元这种形式的访问权限。
+
+分为：友元函数、友元类、友元成员函数。看下面的代码：
+
+```c++
+#include <stdio.h>
+#include <math.h>
+
+class Point
+{
+    double x;
+    double y;
+public:
+    Point(double x, double y)
+    {
+        this->x = x;
+        this->y = y;
+    }
+    
+    double getX()
+    {
+        return x;
+    }
+    
+    double getY()
+    {
+        return y;
+    }
+       
+    friend double func(Point& p1, Point& p2);   //friend声明了一个友元函数
+};
+
+double func(Point& p1, Point& p2)
+{
+    double ret = 0;
+    
+    ret = (p2.y - p1.y) * (p2.y - p1.y) +
+          (p2.x - p1.x) * (p2.x - p1.x);
+          
+    ret = sqrt(ret);
+    
+    return ret;
+}
+
+int main()
+{
+    Point p1(1, 2);
+    Point p2(10, 20);
+    
+    printf("p1(%f, %f)\n", p1.getX(), p1.getY());
+    printf("p2(%f, %f)\n", p2.getX(), p2.getY());
+    printf("|(p1, p2)| = %f\n", func(p1, p2));
+    
+    
+    return 0;
+}
+
+```
+
+上面的class里面声明的友元函数，它的访问权限和成员函数相同，也就是这个友元函数可以跟在class里面的内部函数一样知道class的内部情况，不过这个友元函数是定义在class之外的。
+
+上面除了friend一个函数，还能friend个class类的东西，或者friend别的class里面的函数。
+
+某种程度友元破坏了class的封装，所以最好在C++编程中不要使用它，免得某种程度有损OOP的理念。
+
+
+
+
+
