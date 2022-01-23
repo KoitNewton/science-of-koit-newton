@@ -310,3 +310,142 @@ int main(void)
 你在main函数中执行到exit()时就会终结程序。
 
 atexit()的括号里面放最多32个指针，往往是函数指针，那么执行到exit()时就会执行完毕atexit()括号内的函数，接着退出程序。
+
+## 第十七章 高级数据表示
+
+### 17.2 链表
+
+所谓链表，大体上就是一个指针类型的结构体，里面存在数据和一个指向下一个存储地址的指针，但是不指向下一个存储数据的时候时结构体里面存储的下一个指针为NULL。
+
+且需要第一个指针地址，也叫作头指针。
+
+观察下面的代码：
+
+```c
+#include <stdio.h>
+#include <stdlib.h>　　　　/* 提供malloc()原型 */
+#include <string.h>　　　　/* 提供strcpy()原型 */
+#pragma warning(disable : 4996)
+
+#define TSIZE 45           /* 储存片名的数组大小 */
+
+struct film{
+     char title[TSIZE];    
+     int rating;
+     struct film* next;/* 指向链表中的下一个结构 */
+};
+
+char* s_gets(char* st, int n);
+
+int main(void)
+{
+	struct film* head = NULL;
+	struct film* prev, * current;
+	char input[TSIZE];
+		/* 收集并储存信息 */
+		puts("Enter　first　movie　title:");
+	while(s_gets(input, TSIZE) != NULL&& input[0] != '\0')
+	{
+		current = (struct film*)malloc(sizeof(struct film));
+		if (head == NULL) /* 第1个结构 */
+			head  = current;
+		else              /* 后续的结构 */
+			prev->next  = current;
+		current->next  = NULL;
+		strcpy(current->title, input);
+		puts("Enter　your　rating　<0-10>:");
+		scanf("%d", &current->rating);
+		while(getchar() != '\n')
+			continue;
+		puts("Enter　next　movie　title　(empty　line　to　stop):");
+		prev= current;
+	}
+	/* 显示电影列表 */
+
+if(head== NULL)
+		printf("No　data　entered.　");
+else
+printf("Here　is　the　movie　list:\n");
+current = head;
+while(current!= NULL)
+{
+	printf("Movie:　%s　 Rating:　%d\n",
+		current->title, current->rating);
+	current= current->next;
+}
+/* 完成任务，释放已分配的内存 */
+current= head;
+while(current!= NULL)
+{
+	current= head;
+	head = current->next;
+	free(current);
+}
+
+printf("Bye!\n");
+return 0;
+}
+char* s_gets(char* st, int n)
+{
+	char* ret_val;
+	char* find;
+	ret_val= fgets(st, n, stdin);
+	if(ret_val)
+	{
+		find = strchr(st, '\n');// 查找换行符
+		if (find)                    // 如果地址不是 NULL，
+			*find = '\0';          // 在此处放置一个空字符
+		else
+			while(getchar() != '\n')
+			continue; // 处理剩余输入行
+	}
+	return ret_val;
+}
+```
+
+在VS2022中运行时会出现如下报错：
+错误	C4703	使用了可能未初始化的本地指针变量“prev”	Project2	E:\Code_C\Project2\源.c	30	
+
+直观的感受就是这个指针的地址不知道所以不对。我尝试给它赋值一个地址，然后是可以跑出来的，但是会在第57行报错，显示current是nullptr
+
+，地址访问冲突。导致没有打印出bye。
+
+至于此处问题如何处理以及更进阶的复杂的链表，放在数据结构的部分进行讨论，这里是一种初步的了解。
+
+链表删除、增加元素倒是简单，修改两个指针就行。
+
+遍历的话就是得操作覆盖到每一个元素的地址。
+
+------
+
+### 17.3 抽象数据类型（ADT）
+
+```c
+#define TSIZE 45　/* 储存电影名的数组大小 */
+struct　film
+{
+char　title[TSIZE];
+int　rating;
+};
+typedef　struct　film　Item;
+```
+
+类似上面这种，用造一个结构体 film，然后重命名为Item类型，这样就有了Item这种抽象的数据类型了。
+
+### 17.4  二叉查找树
+
+![image-20220124012219776](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20220124012219776.png)
+
+二叉查找树是一种结合了二分查找策略的链接结构。二叉树的每个节点都包含一个项和两个指向其他节点（称为子节点）的指针。
+
+二叉树中的每个节点都包含两个子节点——左节点和右节点，其顺序按照如下规定确定：左节点的项在父节点的项前面，右节点的项在父节点的项后面。这种关系存在于每个有子节点的节点中。进一步而言，所有可以追溯其祖先回到一个父节点的左节点的项，都在该父节点项的前面；所有以一个父节点的右节点为祖先的项，都在该父节点项的后面。该树的顶部被称为根（root）。树具有分层组织，所以以这种方式储存的数据也以等级或层次组织。一般而言，每级都有上一级和下一级。如果二叉树是满的，那么每一级的节点数都是上一级节点数的两倍。
+
+在我看来，是一种有两个next ptr的链表，然后逐渐扩大，跟生物学里面的基因族谱似的。
+
+二叉查找树中的每个节点是其后代节点的根，该节点与其后代节点构成称了一个子树（subtree）。
+
+二叉查找树只有在满员（或平衡）时效率最高。
+
+
+
+我想看到现在应该明白C的高性能不仅仅和它的编译器有关，在代码中也体现在频繁地地址操作。
