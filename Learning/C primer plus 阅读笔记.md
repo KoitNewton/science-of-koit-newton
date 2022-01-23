@@ -434,7 +434,7 @@ typedef　struct　film　Item;
 
 ### 17.4  二叉查找树
 
-![image-20220124012219776](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20220124012219776.png)
+![](https://hideoushumpbackfreak.com/algorithms/images/binary_tree.png)
 
 二叉查找树是一种结合了二分查找策略的链接结构。二叉树的每个节点都包含一个项和两个指向其他节点（称为子节点）的指针。
 
