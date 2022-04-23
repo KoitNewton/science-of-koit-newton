@@ -731,3 +731,545 @@ help logical
     <a href="matlab:doc logical">logical 的文档</a>
     <a href="matlab:matlab.internal.language.introspective.overloads.displayOverloads('logical')">名为 logical 的其他函数</a>
 
+help newtgen
+
+未找到 newtgen。
+
+请使用帮助浏览器的搜索字段<a href="matlab:docsearch newtgen">搜索文档</a>，或者
+键入 "<a href="matlab:help help">help help</a>" 获取有关帮助命令选项的信息，例如方法的帮助。
+
+help debug
+ <strong>debug</strong> List MATLAB debugging functions
+ 
+    <a href="matlab:help dbstop">dbstop</a>     - Set breakpoint.
+    <a href="matlab:help dbclear">dbclear</a>    - Remove breakpoint.
+    <a href="matlab:help dbcont">dbcont</a>     - Resume execution.
+    <a href="matlab:help dbdown">dbdown</a>     - Change local workspace context.
+    <a href="matlab:help dbmex">dbmex</a>      - Enable MEX-file debugging.
+    <a href="matlab:help dbstack">dbstack</a>    - List who called whom.
+    <a href="matlab:help dbstatus">dbstatus</a>   - List all breakpoints.
+    <a href="matlab:help dbstep">dbstep</a>     - Execute one or more lines.
+    <a href="matlab:help dbtype">dbtype</a>     - List file with line numbers.
+    <a href="matlab:help dbup">dbup</a>       - Change local workspace context.
+    <a href="matlab:help dbquit">dbquit</a>     - Quit debug mode.
+ 
+    When a breakpoint is hit, MATLAB goes into debug mode, the debugger
+    window becomes active, and the prompt changes to a K>>.  Any MATLAB
+    command is allowed at the prompt.  
+ 
+    To resume program execution, use DBCONT or DBSTEP.  
+    To exit from the debugger use DBQUIT.
+
+Menus
+Menus
+Do this ... press any key to continue ...
+Do that ... press any key to continue ...
+help menus
+--- 未找到 <strong>menus</strong>。改为显示 <strong>Menus</strong> 的帮助。---
+
+<strong>Menus</strong> 是一个脚本。
+
+help  Menus
+<strong>Menus</strong> 是一个脚本。
+
+help menus
+--- 未找到 <strong>menus</strong>。改为显示 <strong>Menus</strong> 的帮助。---
+
+<strong>Menus</strong> 是一个脚本。
+
+help menu
+ <strong>menu</strong>   Generate a menu of choices for user input.
+    CHOICE = <strong>menu</strong>(HEADER, ITEM1, ITEM2, ... ) displays the HEADER
+    string followed in sequence by the menu-item strings: ITEM1, ITEM2,
+    ... ITEMn. Returns the number of the selected menu-item as CHOICE,
+    a scalar value. There is no limit to the number of menu items.
+ 
+    CHOICE = <strong>menu</strong>(HEADER, ITEMLIST) where ITEMLIST is a string, cell
+    array is also a valid syntax.
+ 
+    On most graphics terminals <strong>menu</strong> will display the menu-items as push
+    buttons in a figure window, otherwise they will be given as a numbered
+    list in the command window (see example, below).
+ 
+    Example:
+        K = menu('Choose a color','Red','Blue','Green')
+        %creates a figure with buttons labeled 'Red', 'Blue' and 'Green'
+        %The button clicked by the user is returned as K (i.e. K = 2 
+        implies that the user selected Blue).
+ 
+    See also <a href="matlab:help uicontrol">uicontrol</a>, <a href="matlab:help uimenu">uimenu</a>, <a href="matlab:help guide">guide</a>.
+
+    <a href="matlab:doc menu">menu 的文档</a>
+    <a href="matlab:helpUtils.displayFoldersList('menu')">名为 menu 的文件夹</a>
+
+graph_simple
+graph_simple
+{错误使用 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gtext', 'G:\Polyspace\R2020b\toolbox\matlab\graph2d\gtext.m', 62)" style="font-weight:bold">gtext</a> (<a href="matlab: opentoline('G:\Polyspace\R2020b\toolbox\matlab\graph2d\gtext.m',62,0)">第 62 行</a>)
+已被图窗删除操作中断
+
+出错 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('graph_simple', 'F:\GitHub\science\programming\Matlab\Code\graph_simple.m', 3)" style="font-weight:bold">graph_simple</a> (<a href="matlab: opentoline('F:\GitHub\science\programming\Matlab\Code\graph_simple.m',3,0)">第 3 行</a>)
+gtext('text')
+} 
+graph_simple
+{错误使用 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gtext', 'G:\Polyspace\R2020b\toolbox\matlab\graph2d\gtext.m', 62)" style="font-weight:bold">gtext</a> (<a href="matlab: opentoline('G:\Polyspace\R2020b\toolbox\matlab\graph2d\gtext.m',62,0)">第 62 行</a>)
+已被图窗删除操作中断
+
+出错 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('graph_simple', 'F:\GitHub\science\programming\Matlab\Code\graph_simple.m', 3)" style="font-weight:bold">graph_simple</a> (<a href="matlab: opentoline('F:\GitHub\science\programming\Matlab\Code\graph_simple.m',3,0)">第 3 行</a>)
+gtext('text')
+} 
+help gtext
+ <strong>gtext</strong>  Place text with mouse.
+    <strong>gtext</strong>('string') displays the graph window, puts up a
+    cross-hair, and waits for a mouse button or keyboard key to be
+    pressed.  The cross-hair can be positioned with the mouse (or
+    with the arrow keys on some computers).  Pressing a mouse button
+    or any key writes the text string onto the graph at the selected
+    location.
+ 
+    <strong>gtext</strong>(C) places the multi-line strings defined by each row
+    of the cell array of strings C.
+ 
+    <strong>gtext</strong>(...,'PropertyName',PropertyValue,...) sets the value of
+    the specified text property.  Multiple property values can be set
+    with a single statement.
+ 
+    Example
+       gtext({'This is the first line','This is the second line'})
+       gtext({'First line','Second line'},'FontName','Times','Fontsize',12)
+ 
+    See also <a href="matlab:help text">text</a>, <a href="matlab:help ginput">ginput</a>.
+
+    <a href="matlab:doc gtext">gtext 的文档</a>
+
+graph_simple
+graph_simple
+graph_simple
+{函数或变量 'xmin' 无法识别。
+
+出错 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('graph_simple', 'F:\GitHub\science\programming\Matlab\Code\graph_simple.m', 10)" style="font-weight:bold">graph_simple</a> (<a href="matlab: opentoline('F:\GitHub\science\programming\Matlab\Code\graph_simple.m',10,0)">第 10 行</a>)
+axis( [xmin, xmax, ymin, ymax] )
+} 
+graph_simple
+{错误: <a href="matlab: opentoline('F:\GitHub\science\programming\Matlab\Code\graph_simple.m',10,21)">文件: graph_simple.m 行: 10 列: 21</a>
+表达式无效。调用函数或对变量进行索引时，请使用圆括号。否则，请检查不匹配的分隔符。
+} 
+graph_simple
+{错误: <a href="matlab: opentoline('F:\GitHub\science\programming\Matlab\Code\graph_simple.m',10,5)">文件: graph_simple.m 行: 10 列: 5</a>
+表达式无效。调用函数或对变量进行索引时，请使用圆括号。否则，请检查不匹配的分隔符。
+} 
+graph_simple1
+graph_simple1
+help axis
+ <strong>axis</strong>  Control axis scaling and appearance.
+    <strong>axis</strong>([XMIN XMAX YMIN YMAX]) sets scaling for the x- and y-axes
+       on the current plot.
+    <strong>axis</strong>([XMIN XMAX YMIN YMAX ZMIN ZMAX]) sets the scaling for the
+       x-, y- and z-axes on the current 3-D plot.
+    <strong>axis</strong>([XMIN XMAX YMIN YMAX ZMIN ZMAX CMIN CMAX]) sets the
+       scaling for the x-, y-, z-axes and color scaling limits on
+       the current axis (see CAXIS). 
+    V = <strong>axis</strong> returns a row vector containing the scaling for the
+       current plot.  If the current view is 2-D, V has four
+       components; if it is 3-D, V has six components.
+ 
+    <strong>axis</strong> AUTO  returns the axis scaling to its default, automatic
+       mode where, for each dimension, 'nice' limits are chosen based
+       on the extents of all line, surface, patch, and image children.
+    <strong>axis</strong> MANUAL  freezes the scaling at the current limits, so that if
+       HOLD is turned on, subsequent plots will use the same limits.
+    <strong>axis</strong> TIGHT  sets the axis limits to the range of the data.
+    <strong>axis</strong> FILL  sets the axis limits and PlotBoxAspectRatio so that
+       the axis fills the position rectangle.  This option only has
+       an effect if PlotBoxAspectRatioMode or DataAspectRatioMode are
+       manual.
+ 
+    <strong>axis</strong> IJ  puts MATLAB into its "matrix" axes mode.  The coordinate
+       system origin is at the upper left corner.  The i axis is
+       vertical and is numbered from top to bottom.  The j axis is
+       horizontal and is numbered from left to right.
+    <strong>axis</strong> XY  puts MATLAB into its default "Cartesian" axes mode.  The
+       coordinate system origin is at the lower left corner.  The x
+       axis is horizontal and is numbered from left to right.  The y
+       axis is vertical and is numbered from bottom to top.
+ 
+    <strong>axis</strong> EQUAL  sets the aspect ratio so that equal tick mark
+       increments on the x-,y- and z-axis are equal in size. This
+       makes SPHERE(25) look like a sphere, instead of an ellipsoid.
+    <strong>axis</strong> IMAGE  is the same as <strong>axis</strong> EQUAL except that the plot
+       box fits tightly around the data.
+    <strong>axis</strong> SQUARE  makes the current axis box square in size.
+    <strong>axis</strong> NORMAL  restores the current axis box to full size and
+        removes any restrictions on the scaling of the units.
+        This undoes the effects of <strong>axis</strong> SQUARE and <strong>axis</strong> EQUAL.
+    <strong>axis</strong> VIS3D  freezes aspect ratio properties to enable rotation of
+        3-D objects and overrides stretch-to-fill.
+ 
+    <strong>axis</strong> OFF  turns off all axis labeling, tick marks and background.
+    <strong>axis</strong> ON  turns axis labeling, tick marks and background back on.
+ 
+    <strong>axis</strong>(H,...) changes the axes handles listed in vector H.
+ 
+    See also <a href="matlab:help axes">axes</a>, <a href="matlab:help grid">grid</a>, <a href="matlab:help subplot">subplot</a>, <a href="matlab:help xlim">xlim</a>, <a href="matlab:help ylim">ylim</a>, <a href="matlab:help zlim">zlim</a>, <a href="matlab:help rlim">rlim</a>
+
+    <a href="matlab:doc axis">axis 的文档</a>
+    <a href="matlab:matlab.internal.language.introspective.overloads.displayOverloads('axis')">名为 axis 的其他函数</a>
+
+help wqual
+--- 未找到 <strong>wqual</strong>。改为显示 <strong>quadl</strong> 的帮助。---
+
+ <strong>quadl</strong>  Numerically evaluate integral, adaptive Lobatto quadrature.
+    Q = <strong>quadl</strong>(FUN,A,B) tries to approximate the integral of scalar-valued
+    function FUN from A to B to within an error of 1.e-6 using high order
+    recursive adaptive quadrature.  FUN is a function handle. The function
+    Y=FUN(X) should accept a vector argument X and return a vector result
+    Y, the integrand evaluated at each element of X.
+ 
+    Q = <strong>quadl</strong>(FUN,A,B,TOL) uses an absolute error tolerance of TOL
+    instead of the default, which is 1.e-6.  Larger values of TOL
+    result in fewer function evaluations and faster computation,
+    but less accurate results.
+ 
+    Q = <strong>quadl</strong>(FUN,A,B,TOL,TRACE) with non-zero TRACE shows the values
+    of [fcnt a b-a Q] during the recursion. Use [] as a placeholder to
+    obtain the default value of TOL.
+ 
+    [Q,FCNT] = <strong>quadl</strong>(...) returns the number of function evaluations.
+ 
+    Use array operators .*, ./ and .^ in the definition of FUN
+    so that it can be evaluated with a vector argument.
+ 
+    <strong>quadl</strong> will be removed in a future release. Use INTEGRAL instead.
+ 
+    Example:
+       Q = quadl(@myfun,0,2);
+    where the file myfun.m defines the function:
+       %-------------------%
+       function y = myfun(x)
+       y = 1./(x.^3-2*x-5);
+       %-------------------%
+ 
+    or, use a parameter for the constant:
+       Q = quadl(@(x)myfun2(x,5),0,2);
+    where the file myfun2.m defines the function:
+       %----------------------%
+       function y = myfun2(x,c)
+       y = 1./(x.^3-2*x-c);
+       %----------------------%
+ 
+    Class support for inputs A, B, and the output of FUN:
+       float: double, single
+ 
+    See also <a href="matlab:help integral">integral</a>, <a href="matlab:help integral2">integral2</a>, <a href="matlab:help integral3">integral3</a>, <a href="matlab:help quadgk">quadgk</a>, <a href="matlab:help quad2d">quad2d</a>, <a href="matlab:help trapz">trapz</a>, ...
+    <a href="matlab:help function_handle">function_handle</a>.
+
+    <a href="matlab:doc quadl">quadl 的文档</a>
+
+help equal
+
+未找到 equal。
+
+请使用帮助浏览器的搜索字段<a href="matlab:docsearch equal">搜索文档</a>，或者
+键入 "<a href="matlab:help help">help help</a>" 获取有关帮助命令选项的信息，例如方法的帮助。
+
+help equa1
+
+未找到 equa1。
+
+请使用帮助浏览器的搜索字段<a href="matlab:docsearch equa1">搜索文档</a>，或者
+键入 "<a href="matlab:help help">help help</a>" 获取有关帮助命令选项的信息，例如方法的帮助。
+
+help equal
+
+未找到 equal。
+
+请使用帮助浏览器的搜索字段<a href="matlab:docsearch equal">搜索文档</a>，或者
+键入 "<a href="matlab:help help">help help</a>" 获取有关帮助命令选项的信息，例如方法的帮助。
+
+help axes
+ <strong>axes</strong> Create axes graphics object
+    <strong>axes</strong>, by itself, creates an axes graphics object in the current figure
+    using default property values.
+ 
+    <strong>axes</strong>(...,Name,Value) specifies axes properties using one or more
+    Name,Value pair arguments.
+ 
+    <strong>axes</strong>(AX) makes existing axes AX the current axes and brings the figure
+    containing it into focus.
+ 
+    <strong>axes</strong>(container,...) creates the axes in the figure, uipanel, or uitab
+    specified by container, instead of in the current figure.
+ 
+    H = <strong>axes</strong>(...) returns the axes object created.
+ 
+    Execute GET(H), where H is an axes object, to see a list of axes object
+    properties and their current values.
+    Execute SET(H) to see a list of axes object properties and legal
+    property values.
+ 
+    See also <a href="matlab:help subplot">subplot</a>, <a href="matlab:help axis">axis</a>, <a href="matlab:help figure">figure</a>, <a href="matlab:help gca">gca</a>, <a href="matlab:help cla">cla</a>.
+
+    <a href="matlab:doc axes">axes 的文档</a>
+
+graph_simple1
+help meshgrid
+ <strong>meshgrid</strong>   Cartesian rectangular grid in 2-D or 3-D
+    [X,Y] = <strong>meshgrid</strong>(x,y) returns 2-D grid coordinates based on the
+    coordinates contained in vectors x and y. X is a matrix where each row
+    is a copy of x, and Y is a matrix where each column is a copy of y. The
+    grid represented by the coordinates X and Y has length(y) rows and
+    length(x) columns.
+ 
+    [X,Y,Z] = <strong>meshgrid</strong>(x,y,z) returns 3-D grid coordinates defined by the
+    vectors x, y, and z. The grid represented by X, Y, and Z has size
+    length(y)-by-length(x)-by-length(z).
+ 
+    [X,Y] = <strong>meshgrid</strong>(x) is the same as [X,Y] = <strong>meshgrid</strong>(x,x), returning
+    square grid coordinates with grid size length(x)-by-length(x).
+ 
+    [X,Y,Z] = <strong>meshgrid</strong>(x) is the same as [X,Y,Z] = <strong>meshgrid</strong>(x,x,x),
+    returning 3-D grid coordinates with grid size
+    length(x)-by-length(x)-by-length(x).
+ 
+    <strong>meshgrid</strong> outputs are typically used for the evaluation of functions of
+    two or three variables and for surface and volumetric plots.
+ 
+    <strong>meshgrid</strong> and NDGRID are similar, but <strong>meshgrid</strong> is restricted to 2-D and
+    3-D while NDGRID supports 1-D to N-D. In 2-D and 3-D the coordinates
+    returned by each function are the same. The difference is the shape of
+    their outputs. For grid vectors x, y, and z of length M, N, and P
+    respectively, NDGRID(x,y) outputs have size M-by-N while <strong>meshgrid</strong>(x,y)
+    outputs have size N-by-M. Similarly, NDGRID(x,y,z) outputs have size
+    M-by-N-by-P while <strong>meshgrid</strong>(x,y,z) outputs have size N-by-M-by-P.
+ 
+    Example: Evaluate and plot the two-variable function
+             f(x,y) = x*exp(-x^2-y^2) for -2 <= x <= 2 and -4 <= y <= 4
+ 
+        [X,Y] = meshgrid(-2:.2:2,-4:.4:4);
+        F = X .* exp(-X.^2 - Y.^2);
+        surf(X,Y,F)
+ 
+ 
+    Class support for inputs x, y, and z:
+       float: double, single
+       integer: uint8, int8, uint16, int16, uint32, int32, uint64, int64
+ 
+    See also <a href="matlab:help mesh">mesh</a>, <a href="matlab:help surf">surf</a>, <a href="matlab:help slice">slice</a>, <a href="matlab:help ndgrid">ndgrid</a>.
+
+    <a href="matlab:doc meshgrid">meshgrid 的文档</a>
+    <a href="matlab:matlab.internal.language.introspective.overloads.displayOverloads('meshgrid')">名为 meshgrid 的其他函数</a>
+
+help mesh
+ <strong>mesh</strong>   3-D mesh surface.
+    <strong>mesh</strong>(X,Y,Z,C) plots the colored parametric mesh defined by
+    four matrix arguments.  The view point is specified by VIEW.
+    The axis labels are determined by the range of X, Y and Z,
+    or by the current setting of AXIS.  The color scaling is determined
+    by the range of C, or by the current setting of CAXIS.  The scaled
+    color values are used as indices into the current COLORMAP.
+ 
+    <strong>mesh</strong>(X,Y,Z) uses C = Z, so color is proportional to mesh height.
+ 
+    <strong>mesh</strong>(x,y,Z) and <strong>mesh</strong>(x,y,Z,C), with two vector arguments replacing
+    the first two matrix arguments, must have length(x) = n and
+    length(y) = m where [m,n] = size(Z).  In this case, the vertices
+    of the mesh lines are the triples (x(j), y(i), Z(i,j)).
+    Note that x corresponds to the columns of Z and y corresponds to
+    the rows.
+ 
+    <strong>mesh</strong>(Z) and <strong>mesh</strong>(Z,C) use x = 1:n and y = 1:m.  In this case,
+    the height, Z, is a single-valued function, defined over a
+    geometrically rectangular grid.
+ 
+    <strong>mesh</strong>(...,'PropertyName',PropertyValue,...) sets the value of
+    the specified surface property.  Multiple property values can be set
+    with a single statement.
+ 
+    <strong>mesh</strong>(AX,...) plots into AX instead of GCA.
+ 
+    <strong>mesh</strong> returns a handle to a surface plot object.
+ 
+    AXIS, CAXIS, COLORMAP, HOLD, SHADING, HIDDEN and VIEW set figure,
+    axes, and surface properties which affect the display of the mesh.
+ 
+    See also <a href="matlab:help surf">surf</a>, <a href="matlab:help meshc">meshc</a>, <a href="matlab:help meshz">meshz</a>, <a href="matlab:help waterfall">waterfall</a>.
+
+    <a href="matlab:doc mesh">mesh 的文档</a>
+
+help ginput
+ <strong>ginput</strong> Graphical input from mouse.
+    [X,Y] = <strong>ginput</strong>(N) gets N points from the current axes and returns
+    the X- and Y-coordinates in length N vectors X and Y.  The cursor
+    can be positioned using a mouse.  Data points are entered by pressing
+    a mouse button or any key on the keyboard except carriage return,
+    which terminates the input before N points are entered. If the current
+    axes is a geographic axes, the coordinates returned are latitude and
+    longitude instead of X and Y.
+ 
+    [X,Y] = <strong>ginput</strong> gathers an unlimited number of points until the
+    return key is pressed.
+ 
+    [X,Y,BUTTON] = <strong>ginput</strong>(N) returns a third result, BUTTON, that
+    contains a vector of integers specifying which mouse button was
+    used (1,2,3 from left) or ASCII numbers if a key on the keyboard
+    was used.
+ 
+    Examples:
+        [x,y] = ginput;
+ 
+        [x,y] = ginput(5);
+ 
+        [x, y, button] = ginput(1);
+ 
+    See also <a href="matlab:help gtext">gtext</a>, <a href="matlab:help waitforbuttonpress">waitforbuttonpress</a>.
+
+    <a href="matlab:doc ginput">ginput 的文档</a>
+
+graph_simple1
+LogarithmicPlots
+{错误使用 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('semilogy')" style="font-weight:bold">semilogy</a>
+向量长度必须相同。
+
+出错 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('LogarithmicPlots', 'F:\GitHub\science\programming\Matlab\Code\LogarithmicPlots.m', 1)" style="font-weight:bold">LogarithmicPlots</a> (<a href="matlab: opentoline('F:\GitHub\science\programming\Matlab\Code\LogarithmicPlots.m',1,0)">第 1 行</a>)
+semilogy(x, y)
+} 
+LogarithmicPlots
+{错误使用 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ginput', 'G:\Polyspace\R2020b\toolbox\matlab\uitools\ginput.m', 84)" style="font-weight:bold">ginput</a> (<a href="matlab: opentoline('G:\Polyspace\R2020b\toolbox\matlab\uitools\ginput.m',84,0)">第 84 行</a>)
+已被图窗删除操作中断
+
+出错 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('LogarithmicPlots', 'F:\GitHub\science\programming\Matlab\Code\LogarithmicPlots.m', 1)" style="font-weight:bold">LogarithmicPlots</a> (<a href="matlab: opentoline('F:\GitHub\science\programming\Matlab\Code\LogarithmicPlots.m',1,0)">第 1 行</a>)
+[x, y] = ginput(n)
+} 
+LogarithmicPlots
+{错误使用 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ginput', 'G:\Polyspace\R2020b\toolbox\matlab\uitools\ginput.m', 84)" style="font-weight:bold">ginput</a> (<a href="matlab: opentoline('G:\Polyspace\R2020b\toolbox\matlab\uitools\ginput.m',84,0)">第 84 行</a>)
+已被图窗删除操作中断
+
+出错 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('LogarithmicPlots', 'F:\GitHub\science\programming\Matlab\Code\LogarithmicPlots.m', 1)" style="font-weight:bold">LogarithmicPlots</a> (<a href="matlab: opentoline('F:\GitHub\science\programming\Matlab\Code\LogarithmicPlots.m',1,0)">第 1 行</a>)
+[x, y] = ginput(5)
+} 
+LogarithmicPlots
+
+x =
+
+      83/868   
+     221/868   
+     467/868   
+     675/868   
+     123/124   
+
+
+y =
+
+     529/686   
+     393/686   
+     255/686   
+     199/686   
+     401/686   
+
+LogarithmicPlots
+
+x =
+
+      47/868   
+      57/868   
+     429/868   
+     725/868   
+     727/868   
+
+
+y =
+
+     625/686   
+     247/686   
+     263/686   
+     545/686   
+     155/686   
+
+help semilogy
+ <strong>semilogy</strong> Semi-log scale plot.
+    <strong>semilogy</strong>(...) is the same as PLOT(...), except a
+    logarithmic (base 10) scale is used for the Y-axis.
+ 
+    See also <a href="matlab:help plot">plot</a>, <a href="matlab:help semilogx">semilogx</a>, <a href="matlab:help loglog">loglog</a>.
+
+    <a href="matlab:doc semilogy">semilogy 的文档</a>
+    <a href="matlab:matlab.internal.language.introspective.overloads.displayOverloads('semilogy')">名为 semilogy 的其他函数</a>
+
+LogarithmicPlots
+
+x =
+
+      61/868   
+     729/868   
+      13/28    
+     423/868   
+     729/868   
+
+
+y =
+
+      13/98    
+     459/686   
+      79/98    
+     375/686   
+     583/686   
+
+LogarithmicPlots
+
+x =
+
+     235/868   
+     307/868   
+      53/124   
+     583/868   
+     611/868   
+
+
+y =
+
+     559/686   
+     411/686   
+     285/686   
+     381/686   
+     561/686   
+
+polarplot
+{函数或变量 'theta' 无法识别。
+
+出错 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('polarplot', 'F:\GitHub\science\programming\Matlab\Code\polarplot.m', 1)" style="font-weight:bold">polarplot</a> (<a href="matlab: opentoline('F:\GitHub\science\programming\Matlab\Code\polarplot.m',1,0)">第 1 行</a>)
+polar(theta, r)
+} 
+polarplot
+{函数或变量 'theta' 无法识别。
+
+出错 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('polarplot', 'F:\GitHub\science\programming\Matlab\Code\polarplot.m', 1)" style="font-weight:bold">polarplot</a> (<a href="matlab: opentoline('F:\GitHub\science\programming\Matlab\Code\polarplot.m',1,0)">第 1 行</a>)
+polar(theta, r)
+} 
+polarplot
+{函数或变量 'theta' 无法识别。
+
+出错 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('polarplot', 'F:\GitHub\science\programming\Matlab\Code\polarplot.m', 1)" style="font-weight:bold">polarplot</a> (<a href="matlab: opentoline('F:\GitHub\science\programming\Matlab\Code\polarplot.m',1,0)">第 1 行</a>)
+polar(theta, r)
+} 
+polarplot
+polarplot
+polarplot
+polarplot
+polarplot
+polarplot
+[警告: 在以后的版本中，fplot 将不接受字符向量或字符串输入。请改用 fplot(@(x)sin(1./x))。] 
+[> 位置：<a href="matlab:matlab.internal.language.introspective.errorDocCallback('fplot', 'G:\Polyspace\R2020b\toolbox\matlab\graphics\function\fplot.m', 110)" style="font-weight:bold">fplot</a> (<a href="matlab: opentoline('G:\Polyspace\R2020b\toolbox\matlab\graphics\function\fplot.m',110,0)">第 110 行</a>)
+位置: <a href="matlab:matlab.internal.language.introspective.errorDocCallback('polarplot', 'F:\GitHub\science\programming\Matlab\Code\polarplot.m', 11)" style="font-weight:bold">polarplot</a> (<a href="matlab: opentoline('F:\GitHub\science\programming\Matlab\Code\polarplot.m',11,0)">第 11 行</a>)] 
+polarplot
+[警告: 在以后的版本中，fplot 将不接受字符向量或字符串输入。请改用 fplot(@(x)sin(1./x))。] 
+[> 位置：<a href="matlab:matlab.internal.language.introspective.errorDocCallback('fplot', 'G:\Polyspace\R2020b\toolbox\matlab\graphics\function\fplot.m', 110)" style="font-weight:bold">fplot</a> (<a href="matlab: opentoline('G:\Polyspace\R2020b\toolbox\matlab\graphics\function\fplot.m',110,0)">第 110 行</a>)
+位置: <a href="matlab:matlab.internal.language.introspective.errorDocCallback('polarplot', 'F:\GitHub\science\programming\Matlab\Code\polarplot.m', 11)" style="font-weight:bold">polarplot</a> (<a href="matlab: opentoline('F:\GitHub\science\programming\Matlab\Code\polarplot.m',11,0)">第 11 行</a>)] 
+{错误使用 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('plot3')" style="font-weight:bold">plot3</a>
+向量长度必须相同。
+
+出错 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('polarplot', 'F:\GitHub\science\programming\Matlab\Code\polarplot.m', 14)" style="font-weight:bold">polarplot</a> (<a href="matlab: opentoline('F:\GitHub\science\programming\Matlab\Code\polarplot.m',14,0)">第 14 行</a>)
+plot3(x, y, z)
+} 
+ThreeD_plots
+ThreeD_plots
+ThreeD_plots
+ThreeD_plots

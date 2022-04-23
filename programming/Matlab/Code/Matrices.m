@@ -13,3 +13,12 @@ end
 p(t) = sum(x);
 plot(1:15, p(1:15)), xlabel('months'), ylabel('rabbits')
 hold, plot(1:15, p(1:15),'o')
+
+
+
+
+n = 6;
+P = sparse(1, 1, 1, n, n);
+P = P + sparse(n, n, 1, n, n);
+P = P + sparse(1:n-2, 2:n-1, 1/3, n, n);
+P = P + sparse(3:n, 2:n-1, 2/3, n, n)
