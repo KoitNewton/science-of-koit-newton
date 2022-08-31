@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "e95f6db68c26d46f",
+        "id": "a9ae146da15a3cdb",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2022-08-30 n阶常系数齐次线性方程.md",
+            "file": "2022-08-31 欧拉方程.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#世界",
+                "query": "tag:#n阶偏微分方程求通解的方法",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,13 +77,13 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2022-08-30 n阶常系数齐次线性方程.md",
+                "file": "2022-08-31 欧拉方程.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": true,
+                "backlinkCollapsed": false,
                 "unlinkedCollapsed": false
               }
             }
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2022-08-30 n阶常系数齐次线性方程.md",
+                "file": "2022-08-31 欧拉方程.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2022-08-30 n阶常系数齐次线性方程.md"
+                "file": "2022-08-31 欧拉方程.md"
               }
             }
           }
@@ -125,14 +125,16 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
-  "active": "e95f6db68c26d46f",
+  "active": "d8a5360a3646f2ce",
   "lastOpenFiles": [
+    "2022-08-31.md",
+    "2022-08-31 欧拉方程.md",
+    "2022-08-28 线性微分方程解的结构.md",
+    "2022-08-31 常系数非齐次线性微分方程.md",
     "2022-08-30 n阶常系数齐次线性方程.md",
     "2022-08-30 常系数齐次线性微分方程.md",
-    "2022-08-28常数变易法.md",
-    "2022-08-28 线性微分方程解的结构.md"
+    "2022-08-28常数变易法.md"
   ]
 }
