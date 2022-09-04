@@ -1,0 +1,63 @@
+\documentclass[a4paper,13pt]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+%\usepackage{graphicxsp}
+%\usepackage{graphicxbox}
+\usepackage{float}
+\usepackage{subfigure}
+%\usepackage[margin=1.5cm]{geometry}
+\usepackage[left=2cm, right=2cm, top=1.54cm, bottom=1cm]{geometry}
+\usepackage[onehalfspacing]{setspace}
+
+\title{My test tex file}
+\author{Isaac Cui }
+\date{\today}
+
+\begin{document}
+
+\maketitle
+	Hello, World!
+	I sincerely love you! 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{E:/wallpaper/wp2140500-university-of-cambridge-wallpapers.jpg}
+\caption{The University of Cambridges}
+\label{figure1}
+\end{figure}
+
+\section{introduction}
+\begin{table} [!ht]
+\ centering
+	\begin{tabular}{ l l l }[c]
+ 		 cell 11 & cell 12 & cell 13 \\
+		 cell 21 & cell 22 & cell 23 \\
+ 	\end{tabular}
+ \caption{Table caption}
+ \label { tab:myspstable}
+ \end{table}
+
+\begin{table} [ !ht ]
+ \centering
+ \begin{tabular}{p{2cm} |p{3cm}p{3cm} }
+ cell 11 & cell 12 & cell 13 \\ \hline
+ cell 21 & cell 22 & cell 23 \\
+ cell 31 & cell 32 & cell 33
+ \end{tabular}
+ \caption{Sample table }
+ \label { tab:myspstable1}
+ \end{table}
+
+\begin{itemize}
+ \item Sample item 1
+ \item Sample item 2
+\end{itemize}
+
+
+$\frac{2\pi}{12}$
+$$ x^{m+n} = x^m \cdot x^n \ \infty_{n=1}^{10}$$
+
+
+
+
+\end{document}
