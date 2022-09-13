@@ -1,0 +1,4 @@
+这个命令用于清除在当前 Wolfram 系统会话中的所有定义：
+Clear["Global`*"]
+用 Clear 清除 x 和 y 的值：
+Clear[x, y]
