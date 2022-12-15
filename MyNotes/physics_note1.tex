@@ -12,7 +12,7 @@
 \newtheorem{example}[theorem]{例}
 \newtheorem{proposition}[theorem]{命题}
 
-\begin{document}
+\begin{document}                                                            
 
 \maketitle
 
@@ -40,9 +40,21 @@
 \setcounter{page}{1}
 \pagenumbering{arabic}
 
-\chapter{章节标题}
+\chapter{经典物理基础}
+系统总能量算符: $\hat{E}=i \hbar \frac{\partial}{\partial t} ;$ 哈密顿量算符: $\hat{H}=\hat{T}+\hat{V}$ 在球坐标中, 角动量算符的各个分量分别为
+$$
+\begin{gathered}
+\hat{L}_x=\hat{y} \hat{\boldsymbol{P}}_z-\hat{z} \hat{P}_y=-i \hbar\left(y \frac{\partial}{\partial z}-z \frac{\partial}{\partial y}\right)=i \hbar\left(\sin \varphi \frac{\partial}{\partial \theta}+\cot \theta \cos \varphi \frac{\partial}{\partial \varphi}\right) \\
+\hat{L}_y=-i \hbar\left(\cos \varphi \frac{\partial}{\partial \theta}-\cot \theta \sin \varphi \frac{\partial}{\partial \varphi}\right) \\
+\hat{L}_z=-i \hbar \frac{\partial}{\partial \varphi} \\
+\hat{L}^2= - \hbar^2 \left( \frac{1}{\sin \theta} \frac{\partial}{\partial \theta} \sin \theta \frac{\partial}{\partial \theta} + \frac{1}{\sin^2 \theta} \frac{\partial^2}{\partial \phi^2} \right)
+\end{gathered}
+$$
+相应的动能算符则为
+$$
+\hat{T}=-\frac{\hbar^2}{2 m} \frac{1}{r} \frac{\partial^2}{\partial r^2} r+\frac{\hat{L}^2}{2 m r^2}
+$$
 
-在这里可以输入笔记的内容. 
 
 \section{小节标题}
 
